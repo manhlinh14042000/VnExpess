@@ -1,0 +1,413 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VNExpress</title>
+    <link rel="stylesheet" href="~/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+          integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+          crossorigin="anonymous" />
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <!-- logo -->
+        <div class="container-fluid">
+            <div class="vnheader">
+                <img id="imgbanner" src="img/banner-top.png" alt="">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="logo">
+                                <img src="img/logo.png" alt="">
+                                <span> Thứ 2, 5/18/2021 </span>
+                            </div>
+                        </div>
+                        <div class="col-8" id="headerbot">
+                            <div>
+                                <button class="btn btn-light" type="submit">
+                                    <a href="" class="the-a">
+                                        <i class="far fa-clock"></i> Mới nhất
+                                    </a>
+                                </button>
+                            </div>
+                            <div>
+                                <button class="btn btn-light" type="submit">
+                                    <a href="" class="the-a">
+                                        <i class="fab fa-etsy"></i> International
+                                    </a>
+                                </button>
+                            </div>
+                            <div>
+                                <form class="navbar-form" role="search">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="Search" name="q">
+                                        <div class="input-group-btn">
+                                            <button class="btn btn-info" type="submit">
+                                                <i class="fas fa-search"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div> </div>
+                            <div>
+                                <button class="btn btn-success" type="submit">
+                                    <i class="fas fa-user"></i> Đăng nhập
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end logo -->
+            </div>
+        </div>
+    </header>
+    <!-- end header -->
+    <!-- menu -->
+    <section>
+        <div>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <a href="#"><i class="fas fa-home"></i></a>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" href="#" id="navbarDropdownMenuLink" role="button"
+                                   data-bs-toggle="dropdown" aria-expanded="false">
+                                    Thời sự
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="#">Chính trị</a></li>
+                                    <li><a class="dropdown-item" href="#">Đại hội XIII</a></li>
+                                    <li><a class="dropdown-item" href="#">Giao thông</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" id="navbarDropdownMenuLink">Góc nhìn</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" href="#" id="navbarDropdownMenuLink" role="button"
+                                   data-bs-toggle="dropdown" aria-expanded="false">
+                                    Thế giới
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="#">Tư liệu</a></li>
+                                    <li><a class="dropdown-item" href="#">Phân tích</a></li>
+                                    <li><a class="dropdown-item" href="#">Người Việt 5 châu</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" href="#" id="navbarDropdownMenuLink" role="button"
+                                   data-bs-toggle="dropdown" aria-expanded="false">
+                                    Video
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="#">Thời sự</a></li>
+                                    <li><a class="dropdown-item" href="#">Nhịp sống</a></li>
+                                    <li><a class="dropdown-item" href="#">Sport Life</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link  " href="#" id="navbarDropdownMenuLink" role="button"
+                                   data-bs-toggle="dropdown" aria-expanded="false">
+                                    Kinh doanh
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="#">Quốc tế</a></li>
+                                    <li><a class="dropdown-item" href="#">Doanh nghiệp</a></li>
+                                    <li><a class="dropdown-item" href="#">Chứng khoán</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link  " href="#" id="navbarDropdownMenuLink" role="button"
+                                   data-bs-toggle="dropdown" aria-expanded="false">
+                                    Giải trí
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="#">Giới sao</a></li>
+                                    <li><a class="dropdown-item" href="#">Video</a></li>
+                                    <li><a class="dropdown-item" href="#">Phim</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link  " href="#" id="navbarDropdownMenuLink" role="button"
+                                   data-bs-toggle="dropdown" aria-expanded="false">
+                                    Thể thao
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="#">Video</a></li>
+                                    <li><a class="dropdown-item" href="#">Bóng đá</a></li>
+                                    <li><a class="dropdown-item" href="#">Lịch thi đấu</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link  " href="#" id="navbarDropdownMenuLink" role="button"
+                                   data-bs-toggle="dropdown" aria-expanded="false">
+                                    Pháp luật
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="#">Hồ sơ phá án</a></li>
+                                    <li><a class="dropdown-item" href="#">Tư vấn</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link  " href="#" id="navbarDropdownMenuLink" role="button"
+                                   data-bs-toggle="dropdown" aria-expanded="false">
+                                    Giáo dục
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="#">Tuyển sinh</a></li>
+                                    <li><a class="dropdown-item" href="#">Tư vấn</a></li>
+                                    <li><a class="dropdown-item" href="#">Tra cứu đại học</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link  " href="#" id="navbarDropdownMenuLink" role="button"
+                                   data-bs-toggle="dropdown" aria-expanded="false">
+                                    Sức khỏe
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="#">Tin tức</a></li>
+                                    <li><a class="dropdown-item" href="#">Tư vấn</a></li>
+                                    <li><a class="dropdown-item" href="#">Dinh dưỡng</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link  " href="#" id="navbarDropdownMenuLink" role="button"
+                                   data-bs-toggle="dropdown" aria-expanded="false">
+                                    Đời sống
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="#">Tổ ấm</a></li>
+                                    <li><a class="dropdown-item" href="#">Bài học sống</a></li>
+                                    <li><a class="dropdown-item" href="#">Nhà</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link  " href="#" id="navbarDropdownMenuLink" role="button"
+                                   data-bs-toggle="dropdown" aria-expanded="false">
+                                    Du lịch
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="#">Điểm đến</a></li>
+                                    <li><a class="dropdown-item" href="#">Dấu chân</a></li>
+                                    <li><a class="dropdown-item" href="#">Tư vấn</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link  " href="#" id="navbarDropdownMenuLink" role="button"
+                                   data-bs-toggle="dropdown" aria-expanded="false">
+                                    Khoa học
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="#">Tin tức</a></li>
+                                    <li><a class="dropdown-item" href="#">Phát minh</a></li>
+                                    <li><a class="dropdown-item" href="#">Ứng dụng</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link  " href="#" id="navbarDropdownMenuLink" role="button"
+                                   data-bs-toggle="dropdown" aria-expanded="false">
+                                    Số hóa
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="#">Công nghệ</a></li>
+                                    <li><a class="dropdown-item" href="#">Diễn đàn</a></li>
+                                    <li><a class="dropdown-item" href="#">Sản phẩm</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link  " href="#" id="navbarDropdownMenuLink" role="button"
+                                   data-bs-toggle="dropdown" aria-expanded="false">
+                                    Xe
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="#">Thị trường</a></li>
+                                    <li><a class="dropdown-item" href="#">Tư vấn</a></li>
+                                    <li><a class="dropdown-item" href="#">Diễn đàn</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link  " href="#" id="navbarDropdownMenuLink" role="button"
+                                   data-bs-toggle="dropdown" aria-expanded="false">
+                                    Ý kiến
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="#">Đời sống</a></li>
+                                    <li><a class="dropdown-item" href="#">Thời sự</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link  " href="#" id="navbarDropdownMenuLink" role="button"
+                                   data-bs-toggle="dropdown" aria-expanded="false">
+                                    Tâm sự
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="#">Chuyên gia gỡ rối</a></li>
+                                    <li><a class="dropdown-item" href="#">Hẹn hò</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link  " href="#" id="navbarDropdownMenuLink" role="button"
+                                   data-bs-toggle="dropdown" aria-expanded="false">
+                                    Hài
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="#">Cười</a></li>
+                                    <li><a class="dropdown-item" href="#">Đố vui</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- end menu -->
+    </section>
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            <div>
+                <div class="row">
+                    <div class="col-8">
+                        <div class=" row">
+                            <div class="col-3">
+                                <ul class="footerbot" id="mainfooter">
+                                    <li><a href="">Trang chủ</a></li>
+                                    <li><a href="">Video</a></li>
+                                    <li><a href="">Ảnh</a></li>
+                                    <li><a href="">Infographics</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a href="">Mới nhất</a></li>
+                                    <li><a href="">Xem nhiều</a></li>
+                                    <li><a href="">Tin nóng</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="col-3">
+                                <ul class="footerbot">
+                                    <li><a href="">Thời sự</a></li>
+                                    <li><a href="">Góc nhìn</a></li>
+                                    <li><a href="">Thế giới</a></li>
+                                    <li><a href="">Kinh doanh</a></li>
+                                    <li><a href="">Giải trí</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="col-3">
+                                <ul class="footerbot">
+                                    <li><a href="">Thể thao</a></li>
+                                    <li><a href="">Pháp luật</a></li>
+                                    <li><a href="">Giáo dục</a></li>
+                                    <li><a href="">Sức khỏe</a></li>
+                                    <li><a href="">Đời sống</a></li>
+                                    <li><a href="">Du lịch</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="col-3">
+                                <ul class="footerbot">
+                                    <li><a href="">Khoa học</a></li>
+                                    <li><a href="">Số hóa</a></li>
+                                    <li><a href="">Xe </a></li>
+                                    <li><a href="">Ý kiến</a></li>
+                                    <li><a href="">Tâm sự</a></li>
+                                    <li><a href="">Hài</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-4">
+                        <div>
+                            <p>Tải ứng dụng</p>
+                            <button class="btn btn-light" type="submit">
+                                <a href="" class="the-a">
+                                    <i class="fab fa-etsy"></i> VnExpress
+                                </a>
+                            </button>
+                            <button class="btn btn-light" type="submit">
+                                <a href="" class="the-a">
+                                    <i class="fab fa-etsy"></i> International
+                                </a>
+                            </button>
+                        </div>
+                        <hr>
+                        <div>
+                            <p>
+                                Liên Hệ <br>
+                                <i class="fas fa-envelope"></i><a href="" class="the-a"> Tòa Soạn &nbsp;&nbsp;&nbsp;</a>
+                                <i class="fas fa-ad"></i><a href="" class="the-a"> Quảng Cáo </a>
+                            </p>
+                        </div>
+                        <hr>
+                        <div>
+                            <i class="fas fa-phone-square"></i> Đường dây nóng :0366663210
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="container">
+
+                    <div class="footer-extra">
+                        <div>
+                            <img src="/img/logo.png" alt="#">
+                            <p>
+                                Báo Tiếng Việt nhiều người xem nhất
+                                <br>
+                                Thuộc Bộ Khoa học Công nghệ
+                                <br>
+                                Số giấy phép: 06/GP-BTTTT ngày 03/01/2014
+                            </p>
+                        </div>
+                        <div>
+                            <p>
+                                Tổng biên tập: Tuấn Anh <br>
+                                Địa chỉ : Tầng 2, 28 Nguyễn Tri Phương Tp.Huế <br>
+                                Điện Thoại : 0312345678
+                            </p>
+                        </div>
+                        <div>
+
+                            <p>1997-2021. Toàn bộ bản quyền thuộc VnExpress</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <!-- end footer -->
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

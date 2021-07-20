@@ -1,0 +1,109 @@
+/*tim kiem*/
+#custom-search-form {
+        margin:0;
+        margin-top: 5px;
+        padding: 0;
+    }
+ 
+    #custom-search-form .search-query {
+        padding-right: 3px;
+        padding-right: 4px \9;
+        padding-left: 3px;
+        padding-left: 4px \9;
+        /* IE7-8 doesn't have border-radius, so don't indent the padding */
+ 
+        margin-bottom: 0;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+    }
+ 
+    #custom-search-form button {
+        border: 0;
+        background: none;
+        /** belows styles are working good */
+        padding: 2px 5px;
+        margin-top: 2px;
+        position: relative;
+        left: -28px;
+        /* IE7-8 doesn't have border-radius, so don't indent the padding */
+        margin-bottom: 0;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+    }
+ 
+    .search-query:focus + button {
+        z-index: 3;   
+    }
+    #imgbanner{
+        width: 100%;
+    }
+    .main-tintuc {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    background-color: rgb(252, 247, 247);
+    }
+    .the-a{
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+    }
+    .sub-tintuc {
+    display: grid;
+    grid-template-columns: 36% 37% 27%;
+    }
+    #image-tintuc {
+    width: 100px;
+    height: 100px;
+    }
+    .tintuc-left{
+        display: grid;
+        grid-template-columns: 25% 75%;
+    }
+    .nav-link{
+        font-weight: bold;
+        color: black;
+    }
+    #headerbot{
+        display: grid;
+        grid-template-columns: 20% 20% 40% 3% 17%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .logo{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    #tintucphu {
+    display: grid;
+    grid-template-columns: 27% 37% 36%;
+
+    }
+    .row-slide {
+    display: grid;
+    grid-template-columns: 33% 34% 33%;
+    }
+    .row-tintuc {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 33% 34% 33%;
+    }
+    .footerbot a{
+        
+        text-decoration: none;
+        color: black;
+    }
+    .footerbot li{
+        list-style: none;
+    }
+    #mainfooter{
+        font-weight: bold;
+    }
+    .footer-extra{
+        display: grid;
+        grid-template-columns: 33% 34% 33%;
+    }
+
