@@ -13,12 +13,13 @@
                 <div class="main-tintuc">
                     @foreach (var item in Model.FeaturedPosts)
                     {
-                        var url = $"/{item.Id}";
+                        
                         <div class="img-tintuc">
-                            <a href="@url"><img  src="@item.Images" style="width:650px;height:370px" alt="@item.Author"></a>
+                            <a href="#"><img  src="@item.Images" style="width:650px;height:370px" alt="@item.Author"></a>
                         </div>
                         <div>
-                            <a class="the-a" href="">
+                            <a class="the-a" asp-controller="Home" asp-action="Details"
+                               +.>
                                 <h3>@item.Title</h3>
                             </a>
                             <p> @item.ShortContent </p>

@@ -33,6 +33,14 @@ namespace VnExpress.WepApp.Controllers
                 
             return View(viewModel);
         }
+        public async Task<IActionResult> Detail (int id) 
+            {
+            var post = await _postService.GetById(id);
+            return View(new Details()
+            {
+                Post = post
+            });
+            } 
 
         public IActionResult Privacy()
         {
