@@ -13,9 +13,9 @@
                 <div class="main-tintuc">
                     @foreach (var item in Model.FeaturedPosts)
                     {
-                        
+
                         <div class="img-tintuc">
-                            <a href="#"><img  src="@item.Images" style="width:650px;height:370px" alt="@item.Author"></a>
+                            <a href="@Url.Action("Detail", "Home", new { id = item.Id })"><img src="@item.Images" style="width:650px;height:370px" alt="@item.Author"></a>
                         </div>
                         <div>
                             <a class="the-a" asp-controller="Home" asp-action="Details"
@@ -23,7 +23,7 @@
                                 <h3>@item.Title</h3>
                             </a>
                             <p> @item.ShortContent </p>
-                               
+
                         </div>
                     }
                 </div>
@@ -32,7 +32,7 @@
                     @foreach (var item in Model.LatestPosts)
                     {
                         <div class="linecol">
-                            <a class="the-a" href="">
+                            <a class="the-a" href="@Url.Action("Detail", "Home", new { id = item.Id })">
                                 <h5>@item.Title</h5>
                             </a>
                             <p>
@@ -58,7 +58,7 @@
                 @foreach (var item in Model.NewPosts)
                 {
                     <div>
-                        <a class="the-a" href="#">
+                        <a class="the-a" href="@Url.Action("Detail", "Home", new { id = item.Id })">
                             <h5>@item.Title</h5>
                         </a>
                         <div class="tintuc-left">
@@ -97,26 +97,24 @@
                     </nav>
                 </div>
 
-                <div class="container-fluid">
+                <div class="container-fluid" style="padding-top:10px">
                     <div>
                         <div class="row">
                             <div class="col-12" id="tintucphu">
                                 <div>
-                                    <img src="img/elon-musk.jpg" alt="" style="width:185px; height:125px">
+                                    <img src="~/img/nhatban.jpg" alt="" style="width:185px; height:125px">
                                 </div>
-                                <div>
-                                    <a class="the-a" href="">Elon Musk ám chỉ tesla đã bán bitcoin</a>
+                                <div style="padding-left:12px">
+                                    <a class="the-a" href="">Daiya Seto - nỗi thất vọng của chủ nhà Olympic ở môn bơi</a>
                                     <p>
-                                        Elon Musk ngầm ám chỉ đã bán hết Bitcoin khi đáp lại nghi vấn của một tài
-                                        khoản tên Whale.
+                                        NHẬT BẢN Djokovic thừa nhận bản thân kiệt quệ về thể chất và tinh thần, dẫn tới quyết định rút khỏi trận tranh HC đồng đôi nam nữ ...
                                     </p>
                                 </div>
 
                                 <div>
-                                    <a class="the-a" href="">TP Bắc Ninh cách ly xã hội</a>
+                                    <a class="the-a" href="">Daiya Seto - nỗi thất vọng của chủ nhà Olympic ở môn bơi</a>
                                     <p>
-                                        TP Bắc Ninh với dân số hơn 220.000 người áp dụng cách ly xã hội theo chỉ thị
-                                        16.
+                                        NHẬT BẢNDaiya Seto, nam thần bơi lội Nhật Bản, thất bại trong cả ba nội dung tranh tài tại Olympic ...
                                     </p>
                                 </div>
                             </div>
@@ -153,43 +151,41 @@
                         </div>
                     </nav>
                 </div>
-                <div class="container-fluid">
+                <div class="container-fluid" style="padding-top:10px">
                     <div>
                         <div class="row">
                             <div class="col-12" id="tintucphu">
                                 <div>
-                                    <img src="img/elon-musk.jpg" alt="" style="width:185px; height:125px">
+                                    <img src="~/img/vv.jpg" alt="" style="width:185px; height:125px">
                                 </div>
-                                <div>
-                                    <a class="the-a" href="">Elon Musk ám chỉ tesla đã bán bitcoin</a>
+                                <div style="padding-left:12px">
+                                    <a class="the-a" href="">Anh khuyến cáo thai phụ tiêm vaccine Covid-19</a>
                                     <p>
-                                        Elon Musk ngầm ám chỉ đã bán hết Bitcoin khi đáp lại nghi vấn của một tài
-                                        khoản tên Whale.
+                                        Giới chức y tế Anh khuyến cáo thai phụ cần nhanh chóng tiêm vaccine do biến thể Delta có thể tăng nguy cơ mắc bệnh nghiêm trọng ở nhóm này.
                                     </p>
                                 </div>
 
                                 <div>
-                                    <a class="the-a" href="">TP Bắc Ninh cách ly xã hội</a>
+                                    <a class="the-a" href="">Làm gì khi ngứa họng, tê lưỡi sau tiêm vaccine Covid-19 ?</a>
                                     <p>
-                                        TP Bắc Ninh với dân số hơn 220.000 người áp dụng cách ly xã hội theo chỉ thị
-                                        16.
+                                        Một ngày sau tiêm, tôi xuất hiện triệu chứng tê quanh môi, lưỡi kèm cảm giác ngứa họng? Tôi cần làm gì? ...
                                     </p>
                                 </div>
                             </div>
                         </div>
-                        <hr>
-                       
-                        <div class="row-tintuc">
-                            @foreach (var item in Model.LatestPosts)
-                            {
-                            <ul>
-                                <li >
-                                    <a class="the-a" href=""> @item.Title </a>
-                                </li>
-                            </ul>
-                            }
-                         </div>
-                        
+                        @* <hr>
+
+                            <div class="row-tintuc">
+                                @foreach (var item in Model.LatestPosts)
+                                {
+                                <ul>
+                                    <li >
+                                        <a class="the-a" href=""> @item.Title </a>
+                                    </li>
+                                </ul>
+                                }
+                             </div>*@
+
                     </div>
                 </div>
             </div>
@@ -207,13 +203,8 @@
         <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
 
             <!--Controls-->
-            <div class="controls-top">
-                <a class="btn-floating" href="#multi-item-example" data-slide="prev">
-                    <i class="fa fa-chevron-left"></i>
-                </a>
-                <a class="btn-floating" href="#multi-item-example" data-slide="next">
-                    <i class="fa fa-chevron-right"></i>
-                </a>
+            <div class="controls-top" style="text-align:center; font-size:30px; color:black">
+                <p>Tin Mới Nhất</p>
             </div>
             <!--/.Controls-->
             <!--Indicators-->
@@ -245,78 +236,78 @@
                                     </div>
                                 </div>
                             </div>
-                            }
-                        </div>
-                        
+                        }
+                    </div>
+
                 </div>
                 <!--/.First slide-->
                 <!--Second slide-->
                 @*<div class="carousel-item">
 
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="card mb-2">
-                                <img class="card-img-top" src="" alt="Card image cap">
-                                <div class="card-body">
-                                    <h4 class="card-title"><a>asdsadasd</a></h4>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card mb-2">
+                                    <img class="card-img-top" src="" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h4 class="card-title"><a>asdsadasd</a></h4>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 clearfix d-none d-md-block">
+                                <div class="card mb-2">
+                                    <img class="card-img-top" src="" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h4 class="card-title"><a>asdsadasd</a></h4>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 clearfix d-none d-md-block">
+                                <div class="card mb-2">
+                                    <img class="card-img-top" src="" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h4 class="card-title"><a>asdsadasd</a></h4>
+                                    </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="col-md-4 clearfix d-none d-md-block">
-                            <div class="card mb-2">
-                                <img class="card-img-top" src="" alt="Card image cap">
-                                <div class="card-body">
-                                    <h4 class="card-title"><a>asdsadasd</a></h4>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-4 clearfix d-none d-md-block">
-                            <div class="card mb-2">
-                                <img class="card-img-top" src="" alt="Card image cap">
-                                <div class="card-body">
-                                    <h4 class="card-title"><a>asdsadasd</a></h4>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>*@
+                    </div>*@
                 <!--/.Second slide-->
                 <!--Third slide-->
                 @*<div class="carousel-item">
 
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="card mb-2">
-                                <img class="card-img-top" src="" alt="Card image cap">
-                                <div class="card-body">
-                                    <h4 class="card-title"><a>asdsadasd</a></h4>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card mb-2">
+                                    <img class="card-img-top" src="" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h4 class="card-title"><a>asdsadasd</a></h4>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 clearfix d-none d-md-block">
+                                <div class="card mb-2">
+                                    <img class="card-img-top" src="" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h4 class="card-title"><a>asdsadasd</a></h4>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 clearfix d-none d-md-block">
+                                <div class="card mb-2">
+                                    <img class="card-img-top" src="" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h4 class="card-title"><a>asdsadasd</a></h4>
+                                    </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="col-md-4 clearfix d-none d-md-block">
-                            <div class="card mb-2">
-                                <img class="card-img-top" src="" alt="Card image cap">
-                                <div class="card-body">
-                                    <h4 class="card-title"><a>asdsadasd</a></h4>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-4 clearfix d-none d-md-block">
-                            <div class="card mb-2">
-                                <img class="card-img-top" src="" alt="Card image cap">
-                                <div class="card-body">
-                                    <h4 class="card-title"><a>asdsadasd</a></h4>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>*@
+                    </div>*@
                 <!--/.Third slide-->
 
             </div>
@@ -331,37 +322,36 @@
 <!-- end thong tin dn -->
 <!-- quang cao -->
 <!-- Start Midium Banner  -->
-<section class="midium-banner">
+<!--<section class="midium-banner">
     <div class="container">
-        <div class="row">
-            <!-- Single Banner  -->
-            <div class="col-lg-6 col-md-6 col-12">
-                <div class="single-banner">
-                    <img src="https://via.placeholder.com/600x370" alt="#">
-                    <div class="content">
-                        <p>Tin Nóng</p>
-                        <h3> Tin Mới <br>Khoa Học<span> Công Nghệ</span></h3>
-                        <a class="the-a" href="#">Trang chủ</a>
-                    </div>
-                </div>
-            </div>
-            <!-- /End Single Banner  -->
-            <!-- Single Banner  -->
-            <div class="col-lg-6 col-md-6 col-12">
-                <div class="single-banner">
-                    <img src="https://via.placeholder.com/600x370" alt="#">
-                    <div class="content">
-                        <p>Tin Nóng</p>
-                        <h3> Tin Mới <br>Khoa Học<span> Công Nghệ</span></h3>
-                        <a class="the-a" href="#">Trang chủ</a>
-                    </div>
-                </div>
-            </div>
-            <!-- /End Single Banner  -->
-            <hr>
+        <div class="row">-->
+<!-- Single Banner  -->
+<!--<div class="col-lg-6 col-md-6 col-12">
+    <div class="single-banner">
+        <img src="https://via.placeholder.com/600x370" alt="#">
+        <div class="content">
+            <p>Tin Nóng</p>
+            <h3> Tin Mới <br>Khoa Học<span> Công Nghệ</span></h3>
+            <a class="the-a" href="#">Trang chủ</a>
         </div>
     </div>
-</section>
-
+</div>-->
+<!-- /End Single Banner  -->
+<!-- Single Banner  -->
+<!--<div class="col-lg-6 col-md-6 col-12">
+    <div class="single-banner">
+        <img src="https://via.placeholder.com/600x370" alt="#">
+        <div class="content">
+            <p>Tin Nóng</p>
+            <h3> Tin Mới <br>Khoa Học<span> Công Nghệ</span></h3>
+            <a class="the-a" href="#">Trang chủ</a>
+        </div>
+    </div>
+</div>-->
+<!-- /End Single Banner  -->
+<!--<hr>
+        </div>
+    </div>
+</section>-->
 <!-- End Midium Banner -->
 <!-- end quang cao -->
