@@ -20,6 +20,7 @@ namespace VnExpress.Application.Posts
         }
         public async Task<List<PostVm>> GetAll()
         {
+            //Where(s => s.CategoryId == categoryid)
             var posts = await _context.Posts.OrderByDescending(post => post.Id).Select(post => new PostVm()
             {
                 Id = post.Id,
@@ -34,6 +35,24 @@ namespace VnExpress.Application.Posts
             return posts;
 
         }
+
+        public async Task<List<PostVm>> GetPost(int categoryid)
+        {
+            //
+            var posts = await _context.Posts.Where(s => s.CategoryId == categoryid).OrderByDescending(post => post.Id).Select(post => new PostVm()
+            {
+                Id = post.Id,
+                Title = post.Title,
+                Author = post.Author,
+                DateCreated = post.DateCreated,
+                ShortContent = post.ShortContent,
+                MainContent = post.MainContent,
+                Images = post.Images,
+                CategoryId = post.CategoryId
+            }).ToListAsync();
+            return posts;
+        }
+
         public async Task<PostVm> GetById(int postId)
         {
             var post = await _context.Posts.FindAsync(postId);
@@ -101,8 +120,9 @@ namespace VnExpress.Application.Posts
             var posts = await _context.Posts.OrderByDescending(post => post.Id).Take(1).Select(post => new PostVm()
             {
                 Title = post.Title,
+                Id = post.Id,
                 ShortContent = post.ShortContent,
-                Images = post.Images,
+                Images = post.Images
             }).ToListAsync();
             return posts;
         }
@@ -112,6 +132,7 @@ namespace VnExpress.Application.Posts
             var posts = await _context.Posts.OrderByDescending(post => post.Id).Take(3).Select(post => new PostVm()
             {
                 Title = post.Title,
+                Id = post.Id,
                 ShortContent = post.ShortContent,
                 Images = post.Images
             }).ToListAsync();
@@ -123,6 +144,7 @@ namespace VnExpress.Application.Posts
             var posts = await _context.Posts.OrderByDescending(post => post.Id).Take(4).Select(post => new PostVm()
             {
                 Title = post.Title,
+                Id = post.Id,
                 ShortContent = post.ShortContent,
                 Images = post.Images,
             }).ToListAsync();

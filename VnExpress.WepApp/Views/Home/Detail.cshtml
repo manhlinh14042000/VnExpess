@@ -2,113 +2,58 @@
 
 @{
     ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
+<section class="section">
 
-<h1>Detail</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-9">
+                <div class="datetime" style="padding-top: 20px; text-align: right; color: #757575"><a>Thứ năm, 5/8/2021, 19:22 (GMT+7)</a> </div>
+                <h2>@(Model.Title)</h2>
+                <p>@(Model.ShortContent)</p>               
+                <div>
+                    <div class="row">
+                        <img src="@(Model.Images)" />
 
-<div>
-    <h4>PostVm</h4>
-    <hr />
-    <dl class="row">
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Id)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Id)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Title)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Title)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Author)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Author)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.DateCreated)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.DateCreated)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.ShortContent)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.ShortContent)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.MainContent)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.MainContent)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Images)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Images)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.CategoryId)
-        </dt>
-        <dd class="col-sm-10">
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Id)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Id)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Title)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Title)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Author)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Author)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.DateCreated)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.DateCreated)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.ShortContent)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.ShortContent)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.MainContent)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.MainContent)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Images)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Images)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.CategoryId)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.CategoryId)
-        </dd>
-    </dl>
-</div>
-<div>
-    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
-    <a asp-action="Index">Back to List</a>
-</div>
-</div>
+                    </div>
+                    <div style=" color: #757575"><p>@(Model.Author)</p></div>
+                    <p>@(Model.MainContent)</p>
+                </div>
+                <div>
+                    <a asp-action="Index">Back to List</a>
+                </div>
+            </div>
+            <div class="col-3" style="padding-top:20px">
+                <div class="card mb-2">
+                    <img src="~/img/detail-2.jpg" />
+                    <div class="card-body">
+                        <h6 class="card-title">
+                            <a>Đăng ký nhận báo giá xe Hyundai Santafe 2021 mới nhất tại Huế</a>
+                        </h6>
+                    </div>
 
+                    @* <div class="logo">
+                            <a class="logo-link" href="https://santafe.hyundaihue.vn/?gclid=EAIaIQobChMIv8X2jK6a8gIVQV1gCh2HBwE3EAEYASAAEgLGfPD_BwE"><img src="~/img/huyndai.jpg" style="height: 50%; width: 50%;" /></a>
+                        </div>*@
+
+                </div>
+                <div class="width_common title-box-category" style="margin-bottom: 20px; color: #222">
+                    <a href="">Xem Nhiều </a>
+                    <hr />
+                </div>
+                <div style="color:black">
+                    <h5><a><img src="~/img/duong-anh-duc-5888-1627963269.jpg" /><br>Phó chủ tịch TP HCM: Chưa tiêm vaccine Sinopharm</a></h5>
+                    <hr>
+                    <p>Bộ Y tế đề nghị không phun khử khuẩn ngoài trời </p>
+                    <hr>
+                    <p>Những thay đổi trong chiến lược chống dịch tại TP HCM </p>
+                    <hr>
+                    <p>Phó thủ tướng yêu cầu Hà Nội 'giãn cách triệt để' </p>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+</section>

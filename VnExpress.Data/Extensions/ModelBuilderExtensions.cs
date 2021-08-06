@@ -47,12 +47,12 @@ namespace VnExpress.Data.Extensions
                }, new Post()
                {
                    Id = 2,
-                   Title = "Tình hình xã hội thế giới",
-                   Author = "Tuấn Anh",
+                   Title = "Phân công nhiệm vụ chống dịch của bốn phó thủ tướng",
+                   Author = "Từ trái sang: Các Phó thủ tướng Phạm Bình Minh, Lê Minh Khái, Vũ Đức Đam, Lê Văn Thành. Ảnh: Tạ Lư",
                    DateCreated = DateTime.Now.Date,
-                   ShortContent = "Tình hình xã hội châu á",
-                   MainContent = "Tình hình xã hội EU",
-                   Images = "Ảnh",
+                   ShortContent = "Ngày 5/8, Thủ tướng phân công nhiệm vụ của bốn phó thủ tướng, các bộ trưởng, trưởng ngành, chủ tịch UBND cấp tỉnh trong công tác phòng chống Covid-19.",
+                   MainContent = "Phó thủ tướng Lê Minh Khái xử lý các vấn đề liên quan đến chính sách tài chính, thuế, bảo hiểm, lãi suất ngân hàng, cơ chế mua sắm, giá dịch vụ thiết yếu, các khoản hỗ trợ đối với doanh nghiệp, người dân, đặc biệt là người lao động xa quê, mất việc làm tại địa bàn thực hiện giãn cách xã hội, phong tỏa, cách ly.",
+                   Images = "https://i1-vnexpress.vnecdn.net/2021/08/05/z2620997921162-b4efe02c49d4ce4-3044-6402-1628165019.jpg?w=680&h=0&q=100&dpr=1&fit=crop&s=riWdaDPG5m3C40lXPmpaZA",
                    CategoryId = 2,
 
                },

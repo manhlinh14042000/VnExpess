@@ -16,8 +16,7 @@ namespace VnExpress.Application.Posts
         Task<List<PostVm>> GetFeaturedPosts();
         Task<List<PostVm>> GetLatestPosts();
         Task<List<PostVm>> GetNewPosts();
-
-
+        Task<List<PostVm>> GetPostByCategory(int categoryid);
 
     }
 }

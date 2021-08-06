@@ -39,6 +39,12 @@ namespace VnExpress.WepApp.Controllers
             return View(post);
         }
 
+        public async Task<IActionResult> category(int id)
+        {
+            var posts = await _postService.GetPostByCategory(id);
+            return View(posts);
+        }
+
         public IActionResult Privacy()
         {
             return View();

@@ -14,13 +14,13 @@
                     @foreach (var item in Model.FeaturedPosts)
                     {
 
-                        <div class="img-tintuc">
-                            <a href="@Url.Action("Detail", "Home", new { id = item.Id })"><img src="@item.Images" style="width:650px;height:370px" alt="@item.Author"></a>
+                        <div class="img-tintuc" style="padding-top:10px">
+                            <a href="@Url.Action("Detail", "Home", new { id = item.Id })"><img src="@item.Images" style="width: 551px; height: 304px"alt="@item.Author"></a>
                         </div>
-                        <div>
-                            <a class="the-a" asp-controller="Home" asp-action="Details"
-                               +.>
-                                <h3>@item.Title</h3>
+                        <div style="padding-top:10px" >
+                            <a class="the-a" href="@Url.Action("Detail", "Home", new { id = item.Id })">
+                                <div style=" font-size: 20px; line-height: 1.25;"><h3>@item.Title</h3></div>
+                                
                             </a>
                             <p> @item.ShortContent </p>
 
@@ -62,20 +62,23 @@
                             <h5>@item.Title</h5>
                         </a>
                         <div class="tintuc-left">
-                            <img id="image-tintuc" src="@item.Images" alt="@item.Author">
-                            <p>
-                                @item.ShortContent
-                            </p>
+                            <img id="image-tintuc" style="padding-top:10px" src="@item.Images" alt="@item.Author">
+                            <div style="padding-left:25px">
+                                <p>
+                                    @item.ShortContent
+                                </p>
+                            </div>
+                           
                         </div>
                     </div>
-                    <hr>
+                    
                 }
 
             </div>
 
             <div class="col-8">
                 <div>
-                    <img src="img/banner-right.PNG" alt="">
+                    <img src="img/banner-right.PNG"  alt="" width="770px"height="196px">
                 </div>
                 <hr>
                 <div>
@@ -102,7 +105,7 @@
                         <div class="row">
                             <div class="col-12" id="tintucphu">
                                 <div>
-                                    <img src="~/img/nhatban.jpg" alt="" style="width:185px; height:125px">
+                                    <img src="~/img/nhatban.jpg" alt="" style="width:185px; height:125px; padding-top:10px">
                                 </div>
                                 <div style="padding-left:12px">
                                     <a class="the-a" href="">Daiya Seto - nỗi thất vọng của chủ nhà Olympic ở môn bơi</a>
@@ -156,7 +159,7 @@
                         <div class="row">
                             <div class="col-12" id="tintucphu">
                                 <div>
-                                    <img src="~/img/vv.jpg" alt="" style="width:185px; height:125px">
+                                    <img src="~/img/vv.jpg" alt="" style="width:185px; height:125px; padding-top:10px">
                                 </div>
                                 <div style="padding-left:12px">
                                     <a class="the-a" href="">Anh khuyến cáo thai phụ tiêm vaccine Covid-19</a>
